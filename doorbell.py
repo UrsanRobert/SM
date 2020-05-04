@@ -1,4 +1,9 @@
-""" * Before you run the code, do not forget to start the pigpiod daemon * 
+"""When we approach our hand to the sensor, the buzzer will make some noise, so we can hear that someone rings. 
+Also,we have 2 LED's. The green one is on when there is no visitor, while the red one is off. 
+When a visitor approach his hand to the sensor, the green LED is off and the red one is on. 
+Also, when we approach our hand to the sensor, an email will be sent to a specific email address with content "You have a visitor". 
+When the visitor left, another email will be sent to the same email address with content "The visitor left!"
+* Before you run the code, do not forget to start the pigpiod daemon * 
 using "sudo pigpiod". * """
 #import the libraries used
 import smtplib
