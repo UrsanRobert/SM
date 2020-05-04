@@ -5,7 +5,6 @@ import smtplib
 import time  
 import pigpio 
 import RPi.GPIO as GPIO
-from threading import Thread
 #create an instance of the pigpio library
 pi = pigpio.pi()
 #define the pin used by the Buzzer this pin will be used by the pigpio 
@@ -55,7 +54,7 @@ GPIO.output(8, GPIO.LOW)
 GPIO.output(10,GPIO.HIGH)
 server=smtplib.SMTP('smtp.gmail.com',587)
 server.starttls()
-server.login("testsm9920","testsm20*")
+server.login("username","password")
 ai=True
 try: 
 	while True : 
