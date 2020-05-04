@@ -62,7 +62,7 @@ try:
 		if calculate_distance() < 15:
 			if ai==True :
 				msg="You have a visitor!"
-				server.sendmail("testsm9920@gmail.com","ursan_robert@yahoo.com",msg)
+				server.sendmail("sender","receiver",msg)
 				GPIO.output(8, GPIO.HIGH)
 				GPIO.output(10, GPIO.LOW)
 				ai=False
@@ -75,7 +75,7 @@ try:
 		else:
 			if ai==False:
 				msg="The visitor left!"
-				server.sendmail("testsm9920@gmail.com","ursan_robert@yahoo.com",msg)
+				server.sendmail("sender","receiver",msg)
 				GPIO.output(8, GPIO.LOW)
 				GPIO.output(10, GPIO.HIGH)
 				ai=True
